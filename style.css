@@ -19,6 +19,13 @@ header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 10dvh;
+}
+
+nav {
+    background-color: #2ca89a;
+    border-radius: 1rem;
+    margin-top: 1%;
 }
 
 nav ul {
@@ -28,15 +35,36 @@ nav ul {
 
 nav li {
     display: inline-block;
+    padding: 1rem;
+    
+}
+
+nav a {
+    text-decoration-line: none;
+    color: aliceblue;
 }
 
 section {
     display: flex;
 }
 
+
 article {
     flex: 1;
+    background-color: #1ec6b83d;
+    margin: 1%;
+    padding: 1rem;
+    border-radius: 1rem;
 }
+
+.article-main {
+    background-image: url("images/landscaping.jpg");
+    background-color: #1ec6b83d;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: azure;
+}
+
 
 footer {
     display: flex;
