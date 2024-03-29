@@ -42,6 +42,11 @@ nav li {
 nav a {
     text-decoration-line: none;
     color: aliceblue;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: #238277;
 }
 
 section {
@@ -51,8 +56,7 @@ section {
 
 article {
     flex: 1;
-    /* background-color: #1ec6b83d; */
-    margin: 1%;
+    margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -85,16 +89,55 @@ article {
 
 .article-img {
     display: flex;
-    width: 13dvw;
+    width: 20vw;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
+    border-radius: 1rem;
 }
 
 footer {
     display: flex;
+    background-color: #2ca89a;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
 }
 
 footer div {
     flex: 1;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
+footer img {
+    width: 10%;
+}
+
+footer div:first-of-type {
+    text-align: left;
+    padding-left: 3rem;
+}
+
+footer div:last-of-type {
+    text-align: right;
+    padding-right: 3rem;
+}
+
+footer hr {
+    border: 1px dotted black;
+}
+
+.section-two article:hover {
+    transform: scale(1.04);
+    transition-duration: 2s;
+    animation-name: animation-article;
+    animation-duration: 2s;
+  }
+
+  @keyframes animation-article {
+    0% {background-color: #1ec6b83d;}
+    100% {background-color: #298d856d;
+    }
+  }
